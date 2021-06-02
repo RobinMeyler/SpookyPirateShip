@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\GUI_h">
+      <UniqueIdentifier>{5cb87fa4-56ea-44c5-a2cf-06a4d08e6b73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Screen_h">
+      <UniqueIdentifier>{1171549f-e188-4b25-98db-aa3430e38d6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Screen_cpp">
+      <UniqueIdentifier>{b79f5fa0-a939-46fc-bf67-b3591c2d2b93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ExtraLib_cpp">
+      <UniqueIdentifier>{2c19b226-18cb-462e-955d-07e5df5ca9c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ExtraLib_h">
+      <UniqueIdentifier>{11810d0b-c70e-4339-9e17-a0a4902d7836}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GUI_cpp">
+      <UniqueIdentifier>{2b38ec0a-5f8c-4730-8ab1-6504a45127d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\State Machine">
+      <UniqueIdentifier>{5f1825d2-74df-42bb-a0f9-a7060e7e6287}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\State Machine">
+      <UniqueIdentifier>{1002724c-d6ad-4c0b-a2f7-ad4c1ee597e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\State Machine\States">
+      <UniqueIdentifier>{a9831e12-e342-4e66-9199-6cda156c577e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\State Machine\States">
+      <UniqueIdentifier>{a3738761-914d-4a0d-bb4e-5bdd783588a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Pathfinding">
+      <UniqueIdentifier>{b2a7091d-2234-4374-b19f-1f30c1fb3d5c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Tile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Button.cpp">
+      <Filter>Source Files\GUI_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CharacterInput.cpp">
+      <Filter>Source Files\GUI_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CheckBox.cpp">
+      <Filter>Source Files\GUI_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI.cpp">
+      <Filter>Source Files\GUI_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HorizontalSlider.cpp">
+      <Filter>Source Files\GUI_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Label.cpp">
+      <Filter>Source Files\GUI_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LeaderboardEntry.cpp">
+      <Filter>Source Files\GUI_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RadioButton.cpp">
+      <Filter>Source Files\GUI_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ScreenTransitions.cpp">
+      <Filter>Source Files\GUI_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VerticalSlider.cpp">
+      <Filter>Source Files\GUI_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VolumeKnob.cpp">
+      <Filter>Source Files\GUI_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Widget.cpp">
+      <Filter>Source Files\GUI_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Gameplay.cpp">
+      <Filter>Source Files\Screen_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Licence.cpp">
+      <Filter>Source Files\Screen_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MainMenu.cpp">
+      <Filter>Source Files\Screen_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Options.cpp">
+      <Filter>Source Files\Screen_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Pause.cpp">
+      <Filter>Source Files\Screen_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Rules.cpp">
+      <Filter>Source Files\Screen_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SoundOptions.cpp">
+      <Filter>Source Files\Screen_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Splash.cpp">
+      <Filter>Source Files\Screen_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Xbox360Controller.cpp">
+      <Filter>Source Files\ExtraLib_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files\ExtraLib_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MyVector3.cpp">
+      <Filter>Source Files\ExtraLib_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelEditor.cpp">
+      <Filter>Source Files\Screen_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ResourceManager.cpp">
+      <Filter>Source Files\ExtraLib_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Selector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Idle.cpp">
+      <Filter>Source Files\State Machine\States</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MovingDown.cpp">
+      <Filter>Source Files\State Machine\States</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MovingUp.cpp">
+      <Filter>Source Files\State Machine\States</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AnimatedSprite.cpp">
+      <Filter>Source Files\State Machine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\StateChangeHandler.cpp">
+      <Filter>Source Files\State Machine</Filter>
+    </ClCompile>
+    <ClCompile Include="MovingRight.cpp">
+      <Filter>Source Files\State Machine\States</Filter>
+    </ClCompile>
+    <ClCompile Include="MovingLeft.cpp">
+      <Filter>Source Files\State Machine\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextInput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Winning.cpp">
+      <Filter>Source Files\Screen_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SpeechBubble.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Rock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Door.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Key.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameOver.cpp">
+      <Filter>Source Files\Screen_cpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Xbox360Controller.h">
+      <Filter>Header Files\ExtraLib_h</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Button.h">
+      <Filter>Header Files\GUI_h</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CharacterInput.h">
+      <Filter>Header Files\GUI_h</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CheckBox.h">
+      <Filter>Header Files\GUI_h</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GUIGlobals.h">
+      <Filter>Header Files\GUI_h</Filter>
+    </ClInclude>
+    <ClInclude Include="include\HorizontalSlider.h">
+      <Filter>Header Files\GUI_h</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Label.h">
+      <Filter>Header Files\GUI_h</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LeaderboardEntry.h">
+      <Filter>Header Files\GUI_h</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RadioButton.h">
+      <Filter>Header Files\GUI_h</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ScreenTransitions.h">
+      <Filter>Header Files\GUI_h</Filter>
+    </ClInclude>
+    <ClInclude Include="include\VerticalSlider.h">
+      <Filter>Header Files\GUI_h</Filter>
+    </ClInclude>
+    <ClInclude Include="include\VolumeKnob.h">
+      <Filter>Header Files\GUI_h</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Widget.h">
+      <Filter>Header Files\GUI_h</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GUI.h">
+      <Filter>Header Files\GUI_h</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Gameplay.h">
+      <Filter>Header Files\Screen_h</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Licence.h">
+      <Filter>Header Files\Screen_h</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MainMenu.h">
+      <Filter>Header Files\Screen_h</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Options.h">
+      <Filter>Header Files\Screen_h</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Pause.h">
+      <Filter>Header Files\Screen_h</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Rules.h">
+      <Filter>Header Files\Screen_h</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SoundOptions.h">
+      <Filter>Header Files\Screen_h</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Splash.h">
+      <Filter>Header Files\Screen_h</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MyVector3.h">
+      <Filter>Header Files\ExtraLib_h</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelEditor.h">
+      <Filter>Header Files\Screen_h</Filter>
+    </ClInclude>
+    <ClInclude Include="Selector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ResourceManager.h">
+      <Filter>Header Files\ExtraLib_h</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Idle.h">
+      <Filter>Header Files\State Machine\States</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MovingDown.h">
+      <Filter>Header Files\State Machine\States</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MovingUp.h">
+      <Filter>Header Files\State Machine\States</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AnimatedSprite.h">
+      <Filter>Header Files\State Machine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\State.h">
+      <Filter>Header Files\State Machine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\StateChangeHandler.h">
+      <Filter>Header Files\State Machine</Filter>
+    </ClInclude>
+    <ClInclude Include="MovingRight.h">
+      <Filter>Header Files\State Machine\States</Filter>
+    </ClInclude>
+    <ClInclude Include="MovingLeft.h">
+      <Filter>Header Files\State Machine\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextInput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Winning.h">
+      <Filter>Header Files\Screen_h</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SpeechBubble.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graph.h">
+      <Filter>Header Files\Pathfinding</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GraphArc.h">
+      <Filter>Header Files\Pathfinding</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GraphNode.h">
+      <Filter>Header Files\Pathfinding</Filter>
+    </ClInclude>
+    <ClInclude Include="include\NodeData.h">
+      <Filter>Header Files\Pathfinding</Filter>
+    </ClInclude>
+    <ClInclude Include="Rock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Door.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Key.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameOver.h">
+      <Filter>Header Files\Screen_h</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="vertex_shader.vert">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="frag_shader.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

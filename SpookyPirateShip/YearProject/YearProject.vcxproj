@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{35B2EEC1-1639-4FC4-A469-9149E52B26ED}</ProjectGuid>
+    <RootNamespace>YearProject</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LibraryPath>.\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>.\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(GLEW_SDK)/include;$(NOISE_SDK)/include;$(SFML_SDK)/include;.\include\;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(GLEW_SDK)\lib;$(SFML_SDK)\lib;.\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-audio-d.lib;sfml-system-d.lib;sfml-window-d.lib;sfml-network-d.lib;OpenGL32.lib;thor-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(GLEW_SDK)/include;$(NOISE_SDK)/include;$(SFML_SDK)/include;.\include\;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(GLEW_SDK)\lib;$(SFML_SDK)\lib;.\lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(GLEW_SDK)/include;$(NOISE_SDK)/include;$(SFML_SDK)/include;.\include\;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(GLEW_SDK)\lib;$(SFML_SDK)\lib;.\lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(GLEW_SDK)/include;$(NOISE_SDK)/include;$(SFML_SDK)/include;.\include\;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(GLEW_SDK)\lib;$(SFML_SDK)\lib;.\lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Collider.cpp" />
+    <ClCompile Include="Door.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="GameOver.cpp" />
+    <ClCompile Include="Key.cpp" />
+    <ClCompile Include="LevelEditor.cpp" />
+    <ClCompile Include="MovingLeft.cpp" />
+    <ClCompile Include="MovingRight.cpp" />
+    <ClCompile Include="Rock.cpp" />
+    <ClCompile Include="Selector.cpp" />
+    <ClCompile Include="SpeechBubble.cpp" />
+    <ClCompile Include="src\AnimatedSprite.cpp" />
+    <ClCompile Include="src\Button.cpp" />
+    <ClCompile Include="src\CharacterInput.cpp" />
+    <ClCompile Include="src\CheckBox.cpp" />
+    <ClCompile Include="src\Game.cpp" />
+    <ClCompile Include="src\Gameplay.cpp" />
+    <ClCompile Include="src\GUI.cpp" />
+    <ClCompile Include="src\HorizontalSlider.cpp" />
+    <ClCompile Include="src\Idle.cpp" />
+    <ClCompile Include="src\Label.cpp" />
+    <ClCompile Include="src\LeaderboardEntry.cpp" />
+    <ClCompile Include="src\Licence.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\MainMenu.cpp" />
+    <ClCompile Include="src\MovingDown.cpp" />
+    <ClCompile Include="src\MovingUp.cpp" />
+    <ClCompile Include="src\MyVector3.cpp" />
+    <ClCompile Include="src\Options.cpp" />
+    <ClCompile Include="src\Pause.cpp" />
+    <ClCompile Include="src\Player.cpp" />
+    <ClCompile Include="src\RadioButton.cpp" />
+    <ClCompile Include="src\ResourceManager.cpp" />
+    <ClCompile Include="src\Rules.cpp" />
+    <ClCompile Include="src\ScreenTransitions.cpp" />
+    <ClCompile Include="src\SoundOptions.cpp" />
+    <ClCompile Include="src\Splash.cpp" />
+    <ClCompile Include="src\StateChangeHandler.cpp" />
+    <ClCompile Include="src\VerticalSlider.cpp" />
+    <ClCompile Include="src\VolumeKnob.cpp" />
+    <ClCompile Include="src\Widget.cpp" />
+    <ClCompile Include="src\Xbox360Controller.cpp" />
+    <ClCompile Include="TextInput.cpp" />
+    <ClCompile Include="Tile.cpp" />
+    <ClCompile Include="Winning.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Collider.h" />
+    <ClInclude Include="Door.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="GameOver.h" />
+    <ClInclude Include="include\AnimatedSprite.h" />
+    <ClInclude Include="include\Button.h" />
+    <ClInclude Include="include\CharacterInput.h" />
+    <ClInclude Include="include\CheckBox.h" />
+    <ClInclude Include="include\Game.h" />
+    <ClInclude Include="include\Gameplay.h" />
+    <ClInclude Include="include\Graph.h" />
+    <ClInclude Include="include\GraphArc.h" />
+    <ClInclude Include="include\GraphNode.h" />
+    <ClInclude Include="include\GUI.h" />
+    <ClInclude Include="include\GUIGlobals.h" />
+    <ClInclude Include="include\HorizontalSlider.h" />
+    <ClInclude Include="include\Idle.h" />
+    <ClInclude Include="include\Label.h" />
+    <ClInclude Include="include\LeaderboardEntry.h" />
+    <ClInclude Include="include\Licence.h" />
+    <ClInclude Include="include\MainMenu.h" />
+    <ClInclude Include="include\MovingDown.h" />
+    <ClInclude Include="include\MovingUp.h" />
+    <ClInclude Include="include\MyVector3.h" />
+    <ClInclude Include="include\NodeData.h" />
+    <ClInclude Include="include\Options.h" />
+    <ClInclude Include="include\Pause.h" />
+    <ClInclude Include="include\Player.h" />
+    <ClInclude Include="include\RadioButton.h" />
+    <ClInclude Include="include\ResourceManager.h" />
+    <ClInclude Include="include\Rules.h" />
+    <ClInclude Include="include\ScreenTransitions.h" />
+    <ClInclude Include="include\SoundOptions.h" />
+    <ClInclude Include="include\Splash.h" />
+    <ClInclude Include="include\State.h" />
+    <ClInclude Include="include\StateChangeHandler.h" />
+    <ClInclude Include="include\VerticalSlider.h" />
+    <ClInclude Include="include\VolumeKnob.h" />
+    <ClInclude Include="include\Widget.h" />
+    <ClInclude Include="include\Xbox360Controller.h" />
+    <ClInclude Include="Key.h" />
+    <ClInclude Include="LevelEditor.h" />
+    <ClInclude Include="MovingLeft.h" />
+    <ClInclude Include="MovingRight.h" />
+    <ClInclude Include="Rock.h" />
+    <ClInclude Include="Selector.h" />
+    <ClInclude Include="SpeechBubble.h" />
+    <ClInclude Include="TextInput.h" />
+    <ClInclude Include="Tile.h" />
+    <ClInclude Include="Winning.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="vertex_shader.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="frag_shader.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
